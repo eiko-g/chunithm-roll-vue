@@ -62,7 +62,7 @@
     // 国服有的歌就做个标记，之后筛选用
     console.log(song);
     if (song) {
-      song.cn = 1;
+      song.cn = true;
     } else {
       console.log("国服有但是日服歌单没有：", item);
     }

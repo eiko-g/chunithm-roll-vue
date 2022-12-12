@@ -9,6 +9,14 @@ import { RouterView } from 'vue-router'
 </script>
 
 <style lang="scss">
+:root {
+  --color-B: #00ab84;
+  --color-A: #ff7e00;
+  --color-E: #f12929;
+  --color-M: #8e1be5;
+  --color-U: #ff173d;
+}
+
 *,
 *::before,
 *::after {
@@ -33,5 +41,11 @@ a {
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 0 0 4px #283791, 0 0 0 8px rgba(#fff, .3);
+}
+
+.tips {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
 }
 </style>
