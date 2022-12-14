@@ -3,6 +3,7 @@
   padding: 0.5em 0;
   display: block;
   width: 100%;
+  max-width: 300px;
   margin: 1em auto;
   border: 0;
   color: #fff;
@@ -10,6 +11,7 @@
   box-shadow: 0 0 0 1px #fff inset, 0 0 0 2px $bgc,
     0 3px 3px rgb(43 52 59 / 50%);
   overflow: hidden;
+  cursor: pointer;
 
   position: relative;
 
@@ -41,5 +43,26 @@
   &::after {
     bottom: -5px;
     right: -5px;
+  }
+}
+
+@mixin input-label(
+  $bdc: #ccc,
+  $bdc-hover: var(--color-border),
+  $tc: #333,
+  $tc-checked: #fff
+) {
+  .inner {
+    color: $tc;
+    border-color: $bdc;
+    &:hover {
+      border-color: $bdc-hover;
+      color: $bdc-hover;
+    }
+  }
+  input:checked ~ .inner {
+    color: $tc-checked;
+    background-color: $bdc-hover;
+    border-color: $bdc-hover;
   }
 }

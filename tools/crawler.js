@@ -1,3 +1,5 @@
+const { getDiffieHellman } = require("crypto");
+
 (function () {
   let 歌单 = JSON.parse(localStorage.getItem("歌单"));
   if (!歌单) {
@@ -65,6 +67,57 @@
       song.cn = true;
     } else {
       console.log("国服有但是日服歌单没有：", item);
+    }
+  });
+
+  localStorage.setItem("歌单", JSON.stringify(歌单));
+})();
+
+// 处理分类
+(function () {
+  let 歌单 = JSON.parse(localStorage.getItem("歌单"));
+  if (!歌单) {
+    throw new Error("请先存一次官方 JSON");
+  }
+
+  歌单.forEach((item) => {
+    switch (item.catname) {
+      case "POPS & ANIME": {
+        item.catname = "pops_anime";
+        console.log("处理后", item);
+        break;
+      }
+      case "東方Project": {
+        item.catname = "toho";
+        console.log("处理后", item);
+        break;
+      }
+      case "VARIETY": {
+        item.catname = "variety";
+        console.log("处理后", item);
+        break;
+      }
+      case "イロドリミドリ": {
+        item.catname = "irodorimidori";
+        console.log("处理后", item);
+        break;
+      }
+      case "ゲキマイ": {
+        item.catname = "geikimai";
+        console.log("处理后", item);
+        break;
+      }
+      case "ORIGINAL": {
+        item.catname = "original";
+        console.log("处理后", item);
+        break;
+      }
+      case "niconico": {
+        console.log("nico 分类不用处理", item);
+      }
+      default: {
+        console.warn("这首歌没被处理", item);
+      }
     }
   });
 

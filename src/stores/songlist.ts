@@ -1,8 +1,9 @@
+import type ISong from "@/interface/ISong";
 import { defineStore } from "pinia";
-import { reactive, ref } from "vue";
+import { ref } from "vue";
 
 export const useSonglistStore = defineStore("songlist", () => {
-  let originSonglist = ref([]);
+  let originSonglist: Array<ISong> = [];
   let currentSong = ref({
     id: 0,
     catname: "分类",
@@ -17,4 +18,6 @@ export const useSonglistStore = defineStore("songlist", () => {
   });
   let currentRank = ref("");
   let rollSonglist = ref([]);
+
+  return { originSonglist, currentSong, currentRank, rollSonglist };
 });

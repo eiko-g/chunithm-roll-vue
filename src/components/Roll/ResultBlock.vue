@@ -1,7 +1,7 @@
 <template>
     <div class="result">
         <p class="tips">※ 封面切换时载入稍慢</p>
-        <p class="category">{{ currentSong.catname }}</p>
+        <p :class="['category', currentSong.catname]">{{ currentSong.catname }}</p>
 
         <div class="cover-area">
             <img :src="coverScr" alt="Cover" :class="['cover', currentRank]">
@@ -11,11 +11,11 @@
         <h3 class="title" lang="ja-jp">{{ currentSong.title }}</h3>
 
         <div class="table-lv">
-            <div class="lv-B">{{ currentSong.lev_bas }}</div>
-            <div class="lv-A">{{ currentSong.lev_adv }}</div>
-            <div class="lv-E">{{ currentSong.lev_exp }}</div>
-            <div class="lv-M current">{{ currentSong.lev_mas }}</div>
-            <div class="lv-U">{{ currentSong.lev_ult }}</div>
+            <div :class="['lv-B']">{{ currentSong.lev_bas }}</div>
+            <div :class="['lv-A']">{{ currentSong.lev_adv }}</div>
+            <div :class="['lv-E']">{{ currentSong.lev_exp }}</div>
+            <div :class="['lv-M']">{{ currentSong.lev_mas }}</div>
+            <div :class="['lv-U']">{{ currentSong.lev_ult }}</div>
         </div>
     </div>
 </template>
@@ -24,30 +24,36 @@
 import { computed, ref } from 'vue';
 import type ISong from '@/interface/ISong';
 
-let currentRank = ref('lev_mas');
+const props = defineProps<{
+    currentSong: ISong;
+    currentRank: string;
+}>();
+function currentRank(input: string) {
+    return input === props.currentRank;
+}
 
-let currentSong: ISong = {
-    "id": "840",
-    "catname": "niconico",
-    "newflag": "0",
-    "title": "幾望の月",
-    "reading": "キホウノツキ",
-    "artist": "なきゃむりゃ",
-    "lev_bas": "2",
-    "lev_adv": "6",
-    "lev_exp": "10",
-    "lev_mas": "13+",
-    "lev_ult": "14",
-    "we_kanji": "",
-    "we_star": "",
-    "image": "1a2f9d04306e7ebe.jpg",
-    "cn": true
-};
+// let currentSong: ISong = {
+//     "id": "840",
+//     "catname": "niconico",
+//     "newflag": "0",
+//     "title": "幾望の月",
+//     "reading": "キホウノツキ",
+//     "artist": "なきゃむりゃ",
+//     "lev_bas": "2",
+//     "lev_adv": "6",
+//     "lev_exp": "10",
+//     "lev_mas": "13+",
+//     "lev_ult": "14",
+//     "we_kanji": "",
+//     "we_star": "",
+//     "image": "1a2f9d04306e7ebe.jpg",
+//     "cn": true
+// };
 
 let coverScr = computed(() => {
     let coverStr: string;
-    if (currentSong.image != undefined) {
-        coverStr = `./assets/img/cover/${currentSong.image}`;
+    if (props.currentSong.image != undefined) {
+        coverStr = `./assets/img/cover/${props.currentSong.image}`;
     } else {
         coverStr = "./assets/img/nocover.png";
     }
@@ -57,7 +63,7 @@ let coverScr = computed(() => {
 let lvText = computed(() => {
     let text = '';
 
-    switch (currentRank.value) {
+    switch (props.currentRank) {
         case 'lev_bas': {
             text = 'Basic';
             break;
@@ -79,7 +85,7 @@ let lvText = computed(() => {
             break;
         }
         default:
-            text = 'Level';
+            text = 'Rank';
     }
 
     return text;
@@ -90,13 +96,42 @@ let lvText = computed(() => {
 .result {
 
     .category {
+        color: #fff;
         font-size: 16px;
         font-weight: bold;
-        background-color: #ccc;
+        background-color: #333;
         text-align: center;
         text-transform: uppercase;
         padding: 0.5em;
         margin: 1em auto;
+
+        &.pops_anime {
+            background-color: var(--color-pops_anime);
+        }
+
+        &.niconico {
+            background-color: var(--color-niconico);
+        }
+
+        &.toho {
+            background-color: var(--color-toho);
+        }
+
+        &.variety {
+            background-color: var(--color-variety);
+        }
+
+        &.irodorimidori {
+            background-color: var(--color-irodorimidori);
+        }
+
+        &.gekimai {
+            background-color: var(--color-geikimai);
+        }
+
+        &.original {
+            background-color: var(--color-original);
+        }
     }
 
     .cover-area {
@@ -161,6 +196,7 @@ let lvText = computed(() => {
         font-weight: bold;
 
         margin: 1em auto;
+        cursor: default;
 
         .lv-B,
         .lv-A,

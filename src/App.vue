@@ -15,6 +15,16 @@ import { RouterView } from 'vue-router'
   --color-E: #f12929;
   --color-M: #8e1be5;
   --color-U: #ff173d;
+
+  --color-pops_anime: #f02d6d;
+  --color-niconico: #8c46ab;
+  --color-toho: #3862b4;
+  --color-variety: #458d68;
+  --color-irodorimidori: #d15995;
+  --color-geikimai: #ba9f39;
+  --color-original: #bd2a1a;
+
+  --color-border: #283791;
 }
 
 *,

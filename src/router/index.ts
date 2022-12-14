@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import { useSonglistStore } from "@/stores/songlist";
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -8,8 +8,13 @@ const router = createRouter({
       path: "/",
       name: "index",
       redirect: {
-        name: "roll",
+        name: "loading",
       },
+    },
+    {
+      path: "/loading",
+      name: "loading",
+      component: () => import("../views/LoadingView.vue"),
     },
     {
       path: "/roll",
@@ -38,5 +43,23 @@ const router = createRouter({
     },
   ],
 });
+
+router.beforeEach((to, from, next) => {
+  if (to.name !== "loading" && !checkSonglist()) {
+    console.log("路由守卫：没载入到歌单");
+    next({ name: "loading" });
+  } else {
+    next();
+  }
+});
+
+function checkSonglist() {
+  const store = useSonglistStore();
+  if (store.originSonglist.length > 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 export default router;
