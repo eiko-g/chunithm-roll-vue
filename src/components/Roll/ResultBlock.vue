@@ -4,24 +4,24 @@
         <p :class="['category', currentSong.catname]">{{ currentSong.catname }}</p>
 
         <div class="cover-area">
-            <img :src="coverScr" alt="Cover" :class="['cover', currentRank]">
-            <span class="level-text">{{ lvText }}</span>
+            <img :src="coverScr" alt="Cover" :class="['cover', props.currentRank]">
+            <span :class="['level-text', props.currentRank]">{{ lvText }}</span>
         </div>
 
         <h3 class="title" lang="ja-jp">{{ currentSong.title }}</h3>
 
         <div class="table-lv">
-            <div :class="['lv-B']">{{ currentSong.lev_bas }}</div>
-            <div :class="['lv-A']">{{ currentSong.lev_adv }}</div>
-            <div :class="['lv-E']">{{ currentSong.lev_exp }}</div>
-            <div :class="['lv-M']">{{ currentSong.lev_mas }}</div>
-            <div :class="['lv-U']">{{ currentSong.lev_ult }}</div>
+            <div :class="['lv-B', { current: currentRank('lev_bas') }]">{{ currentSong.lev_bas }}</div>
+            <div :class="['lv-A', { current: currentRank('lev_adv') }]">{{ currentSong.lev_adv }}</div>
+            <div :class="['lv-E', { current: currentRank('lev_exp') }]">{{ currentSong.lev_exp }}</div>
+            <div :class="['lv-M', { current: currentRank('lev_mas') }]">{{ currentSong.lev_mas }}</div>
+            <div :class="['lv-U', { current: currentRank('lev_ult') }]">{{ currentSong.lev_ult }}</div>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue';
+import { computed } from 'vue';
 import type ISong from '@/interface/ISong';
 
 const props = defineProps<{
@@ -31,24 +31,6 @@ const props = defineProps<{
 function currentRank(input: string) {
     return input === props.currentRank;
 }
-
-// let currentSong: ISong = {
-//     "id": "840",
-//     "catname": "niconico",
-//     "newflag": "0",
-//     "title": "幾望の月",
-//     "reading": "キホウノツキ",
-//     "artist": "なきゃむりゃ",
-//     "lev_bas": "2",
-//     "lev_adv": "6",
-//     "lev_exp": "10",
-//     "lev_mas": "13+",
-//     "lev_ult": "14",
-//     "we_kanji": "",
-//     "we_star": "",
-//     "image": "1a2f9d04306e7ebe.jpg",
-//     "cn": true
-// };
 
 let coverScr = computed(() => {
     let coverStr: string;
@@ -94,7 +76,6 @@ let lvText = computed(() => {
 
 <style lang="scss" scoped>
 .result {
-
     .category {
         color: #fff;
         font-size: 16px;
@@ -162,7 +143,6 @@ let lvText = computed(() => {
             &.lev_ult {
                 box-shadow: 0 0 0 3px var(--color-U);
             }
-
         }
 
         .level-text {
@@ -177,6 +157,26 @@ let lvText = computed(() => {
             padding: .3em 0.5em;
             transform: translateX(-50%) translateY(50%);
             text-transform: uppercase;
+
+            &.lev_bas {
+                background-color: var(--color-B);
+            }
+
+            &.lev_adv {
+                background-color: var(--color-A);
+            }
+
+            &.lev_exp {
+                background-color: var(--color-E);
+            }
+
+            &.lev_mas {
+                background-color: var(--color-M);
+            }
+
+            &.lev_ult {
+                box-shadow: 0 0 0 3px var(--color-U);
+            }
         }
     }
 

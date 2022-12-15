@@ -1,11 +1,11 @@
 import type ISong from "@/interface/ISong";
 import { defineStore } from "pinia";
-import { ref } from "vue";
+import { reactive, ref } from "vue";
 
 export const useSonglistStore = defineStore("songlist", () => {
   let originSonglist: Array<ISong> = [];
-  let currentSong = ref({
-    id: 0,
+  let currentSong: ISong = reactive({
+    id: "0",
     catname: "分类",
     title: "有什么呢？",
     artist: "",

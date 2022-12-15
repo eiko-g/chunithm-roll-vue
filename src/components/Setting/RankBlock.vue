@@ -9,7 +9,7 @@
             </label>
 
             <label class="rank-label B" for="rank-B">
-                <input type="checkbox" name="rank" value="lve_bas" id="rank-B" class="rank B" />
+                <input type="checkbox" name="rank" value="lev_bas" id="rank-B" class="rank B" />
                 <span class="inner">Basic</span>
             </label>
 
