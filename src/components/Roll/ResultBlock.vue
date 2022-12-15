@@ -1,7 +1,7 @@
 <template>
     <div class="result">
         <p class="tips">※ 封面切换时载入稍慢</p>
-        <p :class="['category', currentSong.catname]">{{ currentSong.catname }}</p>
+        <p :class="['category', currentSong.catname]">{{ catText }}</p>
 
         <div class="cover-area">
             <img :src="coverScr" alt="Cover" :class="['cover', props.currentRank]">
@@ -72,6 +72,29 @@ let lvText = computed(() => {
 
     return text;
 });
+
+let catText = computed(() => {
+    switch (props.currentSong.catname) {
+        case "pops_anime":
+            return "动画 & 流行";
+        case "niconico":
+            return "nico & V家";
+        case "toho":
+            return "东方 Project";
+        case "variety":
+            return "联动乐曲";
+        case "irodorimidori":
+            return "彩绿";
+        case "gekimai":
+            return "音击 & maimai";
+        case "original":
+            return '原创';
+        case "分类":
+            return "分类";
+        default:
+            return "分类有误";
+    }
+})
 </script>
 
 <style lang="scss" scoped>
