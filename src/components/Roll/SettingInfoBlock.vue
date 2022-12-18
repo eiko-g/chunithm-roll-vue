@@ -21,7 +21,7 @@
         </p>
         <p>
             <b>抽选歌单：</b>
-            <span class="songlist">还不知道</span>
+            <span class="songlist">ver.CH-1.01?</span>
         </p>
     </div>
 </template>

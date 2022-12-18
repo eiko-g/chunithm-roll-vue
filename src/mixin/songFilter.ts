@@ -23,7 +23,6 @@ export default function songFilter(
   }
 
   // 先筛分类
-  console.log("inputSetting.category[0]", inputSetting.category[0]);
   if (inputSetting.category[0] !== "all") {
     tempSongList = inputSonglist.filter((item: ISong) => {
       return inputSetting.category.includes(item.catname);
@@ -84,6 +83,25 @@ export default function songFilter(
       // 对临时歌单进行处理
       tempSongList.map((song) => {
         console.log("正在处理的歌：", song);
+
+        inputSetting.rank.forEach((rank: string) => {
+          // 可害行
+          // console.log("aaa", song[rank as keyof typeof song]);
+          if (
+            Number.parseInt(song[rank as keyof typeof song] as string) ===
+            抽歌等级
+          ) {
+            console.log(song.title, rank, song[rank as keyof typeof song]);
+            let songPreview: ISongPreview = {
+              id: song.id,
+              name: song.title,
+              rank,
+              lv: song[rank as keyof typeof song] as number | string,
+            };
+            console.log("output 被塞了这个：", songPreview);
+            output.push(songPreview);
+          }
+        });
       });
     } else {
       // 如果数字部分不同的话
@@ -98,8 +116,59 @@ export default function songFilter(
       // 对临时歌单进行处理
       tempSongList.map((song) => {
         console.log("---分割线---");
-
         console.log("正在处理的歌：", song);
+
+        inputSetting.rank.forEach((rank: string) => {
+          let songLv = song[rank as keyof typeof song];
+          // console.log("当前判断的难度和等级", rank, songLv);
+
+          // 麻鬼烦的等级判定
+          // 先判断整数范围
+          // 如果某首歌是 12+ 的话就在 11+ ~ 13 里面，这个肯定没问题，嗯🚩
+          // 同理，11/11+ 和 13/13+ 目前也是在范围内，下面再判断边缘情况
+          // 抽 11+ ~ 12 也是没问题的，11/12+ 的情况在下面会判断
+          if (
+            Number.parseInt(songLv as string) >= inputSetting.lvMin &&
+            Number.parseInt(songLv as string) <= inputSetting.lvMax
+          ) {
+            console.log(
+              songLv,
+              "在等级的数字部分范围内",
+              `${inputSetting.lvMin} ~ ${inputSetting.lvMax}`
+            );
+          } else {
+            // 不在抽歌等级的数字范围内，跳过后面的判断
+            return;
+          }
+
+          // 判断最低等级时带不带加号的情况
+          if (
+            Number.parseInt(songLv as string) === inputSetting.lvMin &&
+            inputSetting.lvMinPlus === true &&
+            (songLv as string)[(songLv as string).length - 1] !== "+"
+          ) {
+            // console.log("❌这个等级不符合要求", rank, songLv);
+            return;
+          }
+
+          if (
+            Number.parseInt(songLv as string) === inputSetting.lvMax &&
+            inputSetting.lvMaxPlus !== true &&
+            (songLv as string)[(songLv as string).length - 1] === "+"
+          ) {
+            // console.log("❌这个等级不符合要求", rank, songLv);
+            return;
+          }
+          console.log("✅最后通过的数据", rank, songLv);
+          let songPreview: ISongPreview = {
+            id: song.id,
+            name: song.title,
+            rank,
+            lv: song[rank as keyof typeof song] as number | string,
+          };
+          console.log("output 被塞了这个：", songPreview);
+          output.push(songPreview);
+        }); // end inputSetting.rank.forEach
       });
     }
   }
