@@ -1,5 +1,3 @@
-const { getDiffieHellman } = require("crypto");
-
 (function () {
   let 歌单 = JSON.parse(localStorage.getItem("歌单"));
   if (!歌单) {
@@ -16,7 +14,7 @@ const { getDiffieHellman } = require("crypto");
 
     let song = 歌单.find((item) => item.id == id);
     // 国服有的歌就做个标记，之后筛选用
-    song.cn = 1;
+    song.cn = true;
 
     switch (diff) {
       case 0:
@@ -103,7 +101,7 @@ const { getDiffieHellman } = require("crypto");
         break;
       }
       case "ゲキマイ": {
-        item.catname = "geikimai";
+        item.catname = "gekimai";
         console.log("处理后", item);
         break;
       }

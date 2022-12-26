@@ -8,6 +8,10 @@
 
 还是老样子，有需要的请去 `public/assets/img/cover/readme.md` 里面看相关说明。
 
+## 已知问题
+
+部分 ~~宴~~ World\'s End 曲目跟官方的对不上，估计有出入。
+
 ## 开发相关
 
 如果没有装 `pnpm` 的话就先 `npm install -g pnpm`，速度比用 `npm` 要快。

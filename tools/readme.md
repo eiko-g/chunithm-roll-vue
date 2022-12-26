@@ -8,6 +8,8 @@
 
 然后贴个 `localStorage.setItem('歌单', JSON.stringify(o))`，按回车。
 
+然后打开歌曲记录界面，切换到按等级排序的页面，从 1 级开始。
+
 其他的代码在 [crawler.js](crawler.js) 里面了，直接在控制台复制粘贴就可以跑了。跑完之后再粘贴一下这句：`document.body.innerHTML = localStorage.getItem('歌单')`，然后复制粘贴保存为 `json` 文件就行了
 
 ## 其他说明
