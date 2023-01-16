@@ -1,3 +1,4 @@
 body {
     background-color: #f3a607;
+    background: linear-gradient(180deg, #fffe58 0, #f3a607 calc(100% - 300px));
 }
