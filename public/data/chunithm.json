@@ -1,6 +1,22 @@
 {
-    "data": 2022122701,
+    "data": 2023020301,
     "list": [
+        {
+            "id": "2321",
+            "catname": "pops_anime",
+            "newflag": "1",
+            "title": "irony",
+            "reading": "IRONY",
+            "artist": "ClariS「俺の妹がこんなに可愛いわけがない。」",
+            "lev_bas": "2",
+            "lev_adv": "5",
+            "lev_exp": "8",
+            "lev_mas": "11+",
+            "lev_ult": "",
+            "we_kanji": "",
+            "we_star": "",
+            "image": "b259b927691a387d.jpg"
+        },
         {
             "id": "2290",
             "catname": "pops_anime",
@@ -2275,6 +2291,86 @@
             "we_star": "",
             "image": "d5a47266b4fe0bfe.jpg",
             "cn": true
+        },
+        {
+            "id": "2315",
+            "catname": "niconico",
+            "newflag": "0",
+            "title": "アニマル",
+            "reading": "アニマル",
+            "artist": "DECO*27",
+            "lev_bas": "3",
+            "lev_adv": "6",
+            "lev_exp": "9+",
+            "lev_mas": "13",
+            "lev_ult": "",
+            "we_kanji": "",
+            "we_star": "",
+            "image": "fcb14b44ed821cba.jpg"
+        },
+        {
+            "id": "2314",
+            "catname": "niconico",
+            "newflag": "0",
+            "title": "シンデレラ",
+            "reading": "シンテレラ",
+            "artist": "DECO*27",
+            "lev_bas": "2",
+            "lev_adv": "6",
+            "lev_exp": "8+",
+            "lev_mas": "12",
+            "lev_ult": "",
+            "we_kanji": "",
+            "we_star": "",
+            "image": "e27117c173f587df.jpg"
+        },
+        {
+            "id": "2316",
+            "catname": "niconico",
+            "newflag": "0",
+            "title": "パラサイト",
+            "reading": "ハラサイト",
+            "artist": "DECO*27",
+            "lev_bas": "2",
+            "lev_adv": "5",
+            "lev_exp": "9",
+            "lev_mas": "12+",
+            "lev_ult": "",
+            "we_kanji": "",
+            "we_star": "",
+            "image": "19c16bd79e432145.jpg"
+        },
+        {
+            "id": "2317",
+            "catname": "niconico",
+            "newflag": "0",
+            "title": "きゅうくらりん",
+            "reading": "キユウクラリン",
+            "artist": "いよわ",
+            "lev_bas": "3",
+            "lev_adv": "7",
+            "lev_exp": "10",
+            "lev_mas": "13+",
+            "lev_ult": "",
+            "we_kanji": "",
+            "we_star": "",
+            "image": "4288ca332c1db6eb.jpg"
+        },
+        {
+            "id": "2318",
+            "catname": "niconico",
+            "newflag": "0",
+            "title": "生きる",
+            "reading": "イキル",
+            "artist": "水野あつ",
+            "lev_bas": "1",
+            "lev_adv": "5",
+            "lev_exp": "8",
+            "lev_mas": "13",
+            "lev_ult": "",
+            "we_kanji": "",
+            "we_star": "",
+            "image": "cb9e3974ae753010.jpg"
         },
         {
             "id": "2328",
@@ -5985,6 +6081,54 @@
             "cn": true
         },
         {
+            "id": "2322",
+            "catname": "toho",
+            "newflag": "1",
+            "title": "お空のニュークリアフュージョン道場",
+            "reading": "オクウノニユウクリアフユウシヨントウシヨウ",
+            "artist": "ARM＋夕野ヨシミ (IOSYS) feat. 藤枝あかね",
+            "lev_bas": "3",
+            "lev_adv": "5",
+            "lev_exp": "8+",
+            "lev_mas": "13+",
+            "lev_ult": "",
+            "we_kanji": "",
+            "we_star": "",
+            "image": "2ed39fd6a54f2123.jpg"
+        },
+        {
+            "id": "2323",
+            "catname": "toho",
+            "newflag": "1",
+            "title": "全人類ノ非想天則",
+            "reading": "センシンルイノヒソウテンソク",
+            "artist": "SOUND HOLIC feat. 匠眞",
+            "lev_bas": "3",
+            "lev_adv": "6",
+            "lev_exp": "9+",
+            "lev_mas": "13",
+            "lev_ult": "",
+            "we_kanji": "",
+            "we_star": "",
+            "image": "22b2a5a7d89cefc1.jpg"
+        },
+        {
+            "id": "2324",
+            "catname": "toho",
+            "newflag": "1",
+            "title": "三妖精SAY YA!!!",
+            "reading": "サンヨウセイSAYYA",
+            "artist": "森羅万象",
+            "lev_bas": "3",
+            "lev_adv": "6",
+            "lev_exp": "9+",
+            "lev_mas": "12",
+            "lev_ult": "",
+            "we_kanji": "",
+            "we_star": "",
+            "image": "eff7c1d9b6b30c06.jpg"
+        },
+        {
             "id": "2285",
             "catname": "toho",
             "newflag": "0",
@@ -8181,7 +8325,7 @@
             "lev_adv": "5",
             "lev_exp": "9+",
             "lev_mas": "12",
-            "lev_ult": "",
+            "lev_ult": "14",
             "we_kanji": "",
             "we_star": "",
             "image": "b38eba298df2c6db.jpg",
@@ -11075,7 +11219,7 @@
         {
             "id": "2308",
             "catname": "variety",
-            "newflag": "1",
+            "newflag": "0",
             "title": "Advance（CHUNITHM edit）",
             "reading": "ADVANCECHUNITHMEDIT",
             "artist": "プロデュース：ワンダープラネット　作曲・編曲：加藤浩義（ノイジークローク）「クラッシュフィーバー」",
@@ -12171,6 +12315,22 @@
             "image": "4bce9ecfb155597d.jpg"
         },
         {
+            "id": "2319",
+            "catname": "irodorimidori",
+            "newflag": "0",
+            "title": "MAIGAHARA パンチラインキッカーズ",
+            "reading": "MAIGAHARAハンチラインキツカウス",
+            "artist": "箱部 なる(CV:M・A・O)＆小野 美苗(CV:伊藤 美来)",
+            "lev_bas": "3",
+            "lev_adv": "5",
+            "lev_exp": "9+",
+            "lev_mas": "13",
+            "lev_ult": "",
+            "we_kanji": "",
+            "we_star": "",
+            "image": "33b3bca05cded3e6.jpg"
+        },
+        {
             "id": "245",
             "catname": "irodorimidori",
             "newflag": "0",
@@ -13130,7 +13290,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "d2b4fb08e12e01d2.jpg"
+            "image": "d2b4fb08e12e01d2.jpg",
+            "cn": true
         },
         {
             "id": "1058",
@@ -13163,7 +13324,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "1a8ae160a19317f9.jpg"
+            "image": "1a8ae160a19317f9.jpg",
+            "cn": true
         },
         {
             "id": "1038",
@@ -13179,7 +13341,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "f5b38b78ede661fd.jpg"
+            "image": "f5b38b78ede661fd.jpg",
+            "cn": true
         },
         {
             "id": "2147",
@@ -13195,7 +13358,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "ab48b25d316ad516.jpg"
+            "image": "ab48b25d316ad516.jpg",
+            "cn": true
         },
         {
             "id": "2165",
@@ -13524,7 +13688,7 @@
         {
             "id": "2368",
             "catname": "gekimai",
-            "newflag": "1",
+            "newflag": "0",
             "title": "Ruler Count, Zero",
             "reading": "RULERCOUNTZERO",
             "artist": "曲：本多友紀（Arte Refact）／歌：R.B.P. [九條 楓(CV：佳村 はるか)、逢坂 茜(CV：大空 直美)、珠洲島 有栖(CV：長縄 まりあ)]",
@@ -13536,6 +13700,22 @@
             "we_kanji": "",
             "we_star": "",
             "image": "d606166cd8a86d84.jpg"
+        },
+        {
+            "id": "2369",
+            "catname": "gekimai",
+            "newflag": "1",
+            "title": "絆はずっとGrowing Up!!!",
+            "reading": "キスナハスツトGROWINGUP",
+            "artist": "曲：原田篤（Arte Refact）／歌：ASTERISM [星咲 あかり(CV：赤尾 ひかる)、藤沢 柚子(CV：久保田 梨沙)、三角 葵(CV：春野 杏)]",
+            "lev_bas": "3",
+            "lev_adv": "6",
+            "lev_exp": "9",
+            "lev_mas": "12",
+            "lev_ult": "",
+            "we_kanji": "",
+            "we_star": "",
+            "image": "1821ed75eb8534d0.jpg"
         },
         {
             "id": "973",
@@ -14003,7 +14183,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "e26cd43e807cedcc.jpg"
+            "image": "e26cd43e807cedcc.jpg",
+            "cn": true
         },
         {
             "id": "2171",
@@ -14132,6 +14313,22 @@
             "we_kanji": "",
             "we_star": "",
             "image": "c65c211e8ffc2494.jpg"
+        },
+        {
+            "id": "2320",
+            "catname": "gekimai",
+            "newflag": "0",
+            "title": "エータ・ベータ・イータ",
+            "reading": "エウタヘウタイウタ",
+            "artist": "ルゼ",
+            "lev_bas": "4",
+            "lev_adv": "8+",
+            "lev_exp": "12+",
+            "lev_mas": "14+",
+            "lev_ult": "",
+            "we_kanji": "",
+            "we_star": "",
+            "image": "26ebab05776bfb69.jpg"
         },
         {
             "id": "202",
@@ -18526,7 +18723,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "91f4ad8a20f9bc35.jpg"
+            "image": "91f4ad8a20f9bc35.jpg",
+            "cn": true
         },
         {
             "id": "2059",
@@ -18542,7 +18740,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "6a524ad4758f28fb.jpg"
+            "image": "6a524ad4758f28fb.jpg",
+            "cn": true
         },
         {
             "id": "2058",
@@ -18558,7 +18757,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "c1cd79bad3d2dbaa.jpg"
+            "image": "c1cd79bad3d2dbaa.jpg",
+            "cn": true
         },
         {
             "id": "2054",
@@ -18574,7 +18774,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "41446cc9aec5ae15.jpg"
+            "image": "41446cc9aec5ae15.jpg",
+            "cn": true
         },
         {
             "id": "2065",
@@ -18590,7 +18791,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "ec89f55fcf6e1c66.jpg"
+            "image": "ec89f55fcf6e1c66.jpg",
+            "cn": true
         },
         {
             "id": "2068",
@@ -18606,7 +18808,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "efc4422e2d7c4252.jpg"
+            "image": "efc4422e2d7c4252.jpg",
+            "cn": true
         },
         {
             "id": "2066",
@@ -18622,7 +18825,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "c0d8ee185b381aa8.jpg"
+            "image": "c0d8ee185b381aa8.jpg",
+            "cn": true
         },
         {
             "id": "1094",
@@ -18638,7 +18842,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "ad2a127a18d30d85.jpg"
+            "image": "ad2a127a18d30d85.jpg",
+            "cn": true
         },
         {
             "id": "2052",
@@ -18654,7 +18859,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "d02ca6b2a3934e2b.jpg"
+            "image": "d02ca6b2a3934e2b.jpg",
+            "cn": true
         },
         {
             "id": "2060",
@@ -18670,7 +18876,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "74af813bf302f1aa.jpg"
+            "image": "74af813bf302f1aa.jpg",
+            "cn": true
         },
         {
             "id": "2090",
@@ -19267,7 +19474,7 @@
         {
             "id": "2310",
             "catname": "original",
-            "newflag": "1",
+            "newflag": "0",
             "title": "任せてJC陰陽師☆八雲ちゃん",
             "reading": "マカセテJCオンミヨウシヤクモチヤン",
             "artist": "永倉秋斗 feat.キャサリン",
@@ -19283,7 +19490,7 @@
         {
             "id": "2311",
             "catname": "original",
-            "newflag": "1",
+            "newflag": "0",
             "title": "†大闘士＝クライン・フォーゲル・シュピール＝えりか†",
             "reading": "タイトウシクラインフオウケルシユヒウルエリカ",
             "artist": "立秋 feat.ちょこ",
@@ -19299,7 +19506,7 @@
         {
             "id": "2312",
             "catname": "original",
-            "newflag": "1",
+            "newflag": "0",
             "title": "Fallin' Darlin' Rollin'",
             "reading": "FALLINDARLINROLLIN",
             "artist": "ave;new feat.佐倉紗織",
@@ -19315,7 +19522,7 @@
         {
             "id": "2313",
             "catname": "original",
-            "newflag": "1",
+            "newflag": "0",
             "title": "恋するみたいに☆かませレッドヘルズ",
             "reading": "コイスルミタイニカマセレツトヘルス",
             "artist": "コバヤシユウヤ（IOSYS） feat.miko",
@@ -19331,7 +19538,7 @@
         {
             "id": "8255",
             "catname": "variety",
-            "newflag": "1",
+            "newflag": "0",
             "title": "ENDYMION",
             "reading": "ENDYMION",
             "artist": "fallen shepherd ft. RabbiTon Strings",
@@ -19347,7 +19554,7 @@
         {
             "id": "8254",
             "catname": "pops_anime",
-            "newflag": "1",
+            "newflag": "0",
             "title": "さんさーら！",
             "reading": "サンサウラ",
             "artist": "ARuFa",
@@ -19363,7 +19570,7 @@
         {
             "id": "8253",
             "catname": "original",
-            "newflag": "1",
+            "newflag": "0",
             "title": "創世のコンツェルティーナ",
             "reading": "ソウセイノコンツエルテイウナ",
             "artist": "大嶋啓之",
