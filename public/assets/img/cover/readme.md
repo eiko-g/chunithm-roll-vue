@@ -24,10 +24,10 @@
 全选，把内容保存到 `cover.txt`。然后开个 `bash` 或者别的啥，反正有 `wget` 就行，然后执行以下内容：
 
 ```bash
-wget -i cover.txt --no-check-certificate
+wget -i cover.txt --no-check-certificate -nv
 ```
 
 这样就可以把封面下到当前文件夹了。
 
-## 有些封面跟舞萌 DX 不一样怎么办？
+## 有些封面跟 中二节奏 New!! 不一样怎么办？
 嗨呀你不会去公众号扒吗？
