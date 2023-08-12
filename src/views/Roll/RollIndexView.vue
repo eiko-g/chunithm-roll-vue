@@ -3,7 +3,7 @@
     <SettingInfoBlockVue :setting="settingStore" />
     <RollButtonsVue @rollClicked="roll" :buttonDisabled="buttonDisabled" />
     <div class="footer">
-        <p>ver test-20230429.01</p>
+        <p>ver test-20230813.01</p>
     </div>
 </template>
 <script setup lang="ts">
