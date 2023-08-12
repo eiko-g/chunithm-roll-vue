@@ -1,5 +1,5 @@
 {
-    "data": 2023042901,
+    "data": 2023081201,
     "list": [
         {
             "id": "2359",
@@ -19475,7 +19475,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "f43d2106ee214b37.jpg"
+            "image": "f43d2106ee214b37.jpg",
+            "cn": true
         },
         {
             "id": "2091",
@@ -19491,7 +19492,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "6ce10c36a38cc896.jpg"
+            "image": "6ce10c36a38cc896.jpg",
+            "cn": true
         },
         {
             "id": "2092",
@@ -19507,7 +19509,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "c4a473910b4cab13.jpg"
+            "image": "c4a473910b4cab13.jpg",
+            "cn": true
         },
         {
             "id": "2093",
@@ -19523,7 +19526,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "57ed6e4851cd74e4.jpg"
+            "image": "57ed6e4851cd74e4.jpg",
+            "cn": true
         },
         {
             "id": "2117",
@@ -19539,7 +19543,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "eebe8aece403e88a.jpg"
+            "image": "eebe8aece403e88a.jpg",
+            "cn": true
         },
         {
             "id": "2118",
@@ -19555,7 +19560,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "82919be841cb0f53.jpg"
+            "image": "82919be841cb0f53.jpg",
+            "cn": true
         },
         {
             "id": "2119",
@@ -19571,7 +19577,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "4d621e787f0b9c34.jpg"
+            "image": "4d621e787f0b9c34.jpg",
+            "cn": true
         },
         {
             "id": "2120",
@@ -19587,7 +19594,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "4f8ebd6b102d379a.jpg"
+            "image": "4f8ebd6b102d379a.jpg",
+            "cn": true
         },
         {
             "id": "2121",
@@ -19603,7 +19611,8 @@
             "lev_ult": "",
             "we_kanji": "",
             "we_star": "",
-            "image": "92f3193635beeac5.jpg"
+            "image": "92f3193635beeac5.jpg",
+            "cn": true
         },
         {
             "id": "2187",

@@ -40,6 +40,7 @@
   });
 
   localStorage.setItem("歌单", JSON.stringify(歌单));
+  console.log('✅当前等级处理完成');
 
   // 跳转到下一个等级的页面
   let aa = document.querySelector('select[name="level"]');
@@ -120,4 +121,5 @@
   });
 
   localStorage.setItem("歌单", JSON.stringify(歌单));
+  console.log('✅分类处理完成')
 })();
