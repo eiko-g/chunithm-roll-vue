@@ -18,7 +18,7 @@ const router = useRouter();
 
 onMounted(async () => {
     push("开始载入了捏");
-    let response = await fetch("./data/chunithm.json?ver=20230812.01"),
+    let response = await fetch("./data/chunithm2024.json?ver=20230923.01"),
         json: IJson;
     if (response.ok) {
         push("歌单加载成功，正在处理");

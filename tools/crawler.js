@@ -13,8 +13,13 @@
       diff = item.querySelector('input[name="diff"]').value;
 
     let song = 歌单.find((item) => item.id == id);
-    // 国服有的歌就做个标记，之后筛选用
-    song.cn = true;
+    if(song) {
+      // 国服有的歌就做个标记，之后筛选用
+      song.cn = true;
+    }else {
+      console.error('没筛到这首歌，检查一下',item);
+      return;
+    }
 
     switch (diff) {
       case 0:
